@@ -1,0 +1,40 @@
+.section1 {
+    background: url("../public/contact-us/sec1.png");
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sec1Card1 {
+    position: absolute;
+    width: auto;
+    height: 120px;
+    left: 80px;
+    top: 160px;
+    background: rgba(31, 17, 17, 0.74);
+    border-radius: 10px;
+    color: white;
+    padding: 14px;
+}
+
+.sec1Card1 h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 64px;
+    margin: 0;
+
+}
+
+.sec1Card1 span {
+    color: #23D34A;
+}
+
+.sec1Card1 p {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 37px;
+}

@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-page-custom-font */
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './layout.module.css';
@@ -9,7 +11,13 @@ import instagram from '../public/logos/insta.svg';
 import facebook from '../public/logos/fb.svg';
 export default function Layout({children,page}){
     return(
-       <>
+        <>
+        <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+        </Head>
+        <body>
             <header className={styles.header}>
             <h1 className={styles.headerText}>Shah Group</h1>
             <Link href='/'><a className={page==1?styles.active:""}>Home</a></Link>
@@ -81,6 +89,7 @@ export default function Layout({children,page}){
         </div>
         <div className={styles.cpright}>© 2021  News Network.All Rights Reserved.</div>
         </footer>
-       </>
+       </body>
+        </>
     )
 }

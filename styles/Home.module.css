@@ -56,5 +56,14 @@
   color: #000000;
   background-color: #9FE885;
   font-size: 26px;
+}
 
+.sec1Button:hover {
+  background-color: mediumaquamarine;
+  color: whitesmoke;
+}
+
+.sec1Button:active {
+  transition: margin 0.1s;
+  margin-bottom: -2px;
 }

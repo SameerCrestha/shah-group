@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 40px;
+    height: 43px;
     width: 100%;
     font-style: normal;
     font-weight: bold;
@@ -16,6 +16,10 @@
     color: white;
     position: absolute;
     z-index: 5;
+}
+
+.header a:hover {
+    color: mediumaquamarine;
 }
 
 
