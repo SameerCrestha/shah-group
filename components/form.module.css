@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+}
+
+.container>div {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.formCell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.formCell>label {
+    margin-bottom: 10px;
+}
+
+.formRow1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.formRow1>div {
+    width: 50%;
+}
+
+.formCell input {
+    height: 30px;
+    width: 85%;
+}
+
+.formCell textarea {
+    width: 90%;
+}
+
+.formRowLast {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formRowLast button {
+    width: 50%;
+    height: 50px;
+    background: #9FE885;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 18px;
+}
