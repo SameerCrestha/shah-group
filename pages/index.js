@@ -16,7 +16,7 @@ export default function Home() {
         <div className={styles.sec1Card2}>
           <Image src={images} placeholder="blur" layout="fill"/>
         </div>
-        <Link href="/contact-us" ><a className={styles.sec1Button}>Contact us</a></Link>
+        <Link href="/contact-us" ><a><button className={styles.sec1Button}>Contact us</button></a></Link>
       </section>
       
     </Layout>
