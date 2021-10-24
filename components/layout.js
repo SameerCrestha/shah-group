@@ -14,8 +14,8 @@ export default function Layout({children,page}){
         <>
         <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet"/>
         </Head>
         <body>
             <header className={styles.header}>
@@ -73,9 +73,9 @@ export default function Layout({children,page}){
             <div>Call us: 986475677 | 01-47863936 | 01-567555930</div>
             <div>
                 Follow us on:
-                <a ><Image src={twitter} height={18} width={18}></Image></a>
-                <a><Image src={instagram} height={18} width={18}></Image></a>
-                <a><Image src={facebook} height={18} width={18}></Image></a>
+                <a ><Image src={twitter} height={16} width={16}></Image></a>
+                <a><Image src={instagram} height={16} width={16}></Image></a>
+                <a><Image src={facebook} height={16} width={16}></Image></a>
             </div>
         </div>
         <hr className={styles.footerLine}/>
