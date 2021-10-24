@@ -1,6 +1,6 @@
 .section1 {
     background: url("../public/contact-us/sec1.png");
-    height: 450px;
+    height: 525px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -10,9 +10,9 @@
     position: absolute;
     width: auto;
     height: 120px;
-    left: 80px;
-    top: 160px;
-    background: rgba(31, 17, 17, 0.74);
+    left: 75px;
+    top: 180px;
+    background: rgba(15, 8, 8, 0.74);
     border-radius: 10px;
     color: white;
     padding: 14px;
@@ -20,11 +20,10 @@
 
 .sec1Card1 h2 {
     font-style: normal;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 64px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
     margin: 0;
-
 }
 
 .sec1Card1 span {
@@ -37,4 +36,65 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 37px;
+}
+
+.sec1Card2 {
+    position: absolute;
+    width: 25vw;
+    height: 340px;
+    left: 68vw;
+    top: 85px;
+    background: #1D2731;
+    border-radius: 12px;
+    color: white;
+    font-weight: 550;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    list-style-type: none;
+    text-underline-offset: 2px;
+    padding-left: 3vw;
+}
+
+.sec1Card2 li {
+    display: flex;
+    align-items: center;
+}
+
+.sec1Card2 a {
+    margin-left: 1.4vw;
+}
+
+.sec1Card2 a:hover {
+    color: mediumaquamarine;
+}
+
+.section2 {
+    height: 570px;
+    background-color: #242121;
+    position: relative;
+}
+
+.sec2Card1 {
+    position: absolute;
+    width: 570px;
+    height: 650px;
+    left: 90px;
+    top: -125px;
+    background: #1D2731;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 45px 4vw;
+}
+
+.sec2Card1Line1 {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 30px;
 }
