@@ -1,5 +1,5 @@
 .section1 {
-  background-image: url('../public/index/section1.jfif');
+  background-image: url('../public/index/section1.png');
   height: 650px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,14 +8,14 @@
 
 .sec1Card1 {
   position: absolute;
-  width: 425px;
-  height: 270px;
+  width: 380px;
+  height: 240px;
   left: 50px;
   top: 140px;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 55px;
+  font-size: 32px;
+  line-height: 50px;
   color: white;
   background: rgba(63, 59, 59, 0.5);
   border-radius: 15px;
@@ -27,7 +27,7 @@
 }
 
 .sec1Card1 p {
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: bold;
   line-height: 20px;
@@ -55,15 +55,5 @@
   justify-content: center;
   color: #000000;
   background-color: #9FE885;
-  font-size: 26px;
-}
-
-.sec1Button:hover {
-  background-color: mediumaquamarine;
-  color: whitesmoke;
-}
-
-.sec1Button:active {
-  transition: margin 0.1s;
-  margin-bottom: -2px;
+  font-size: 22px;
 }
