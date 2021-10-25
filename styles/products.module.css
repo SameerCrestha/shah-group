@@ -1,0 +1,7 @@
+.section1 {
+  background: url('../public/products/products.png');
+  height: 525px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
