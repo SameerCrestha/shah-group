@@ -58,3 +58,14 @@
     font-weight: normal;
     font-size: 18px;
 }
+
+@media (max-width:600px) {
+    .container {
+        width: 100%;
+    }
+
+    .formRow1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
