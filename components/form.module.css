@@ -36,10 +36,12 @@
 .formCell input {
     height: 30px;
     width: 85%;
+    cursor: text;
 }
 
 .formCell textarea {
     width: 90%;
+    cursor: text;
 }
 
 .formRowLast {
