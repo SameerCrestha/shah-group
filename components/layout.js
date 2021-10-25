@@ -186,11 +186,8 @@ export default function Layout({ children, page }) {
               <a>Accesibility</a>
             </Link>
           </div>
-          <div className={styles.cpright}>
-            © 2021 Shahgroup.All Rights Reserved.
-          </div>
+          <div className={styles.cpright}>© 2021 Shahgroup.All Rights Reserved.</div>
         </footer>
-      </body>
-    </>
+      </body></>
   );
 }
