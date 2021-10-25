@@ -1,5 +1,6 @@
 html,
 body {
+  overflow-x: hidden;
   letter-spacing: 0.01em;
   color: white;
   background-color: black;

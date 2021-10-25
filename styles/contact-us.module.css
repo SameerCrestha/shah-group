@@ -99,7 +99,7 @@
     line-height: 30px;
 }
 
-@media (max-width:600px) {
+@media (max-width:680px) {
     .section1 {
         display: flex;
         flex-direction: row;
@@ -130,5 +130,12 @@
 
     .section2 {
         height: 650px;
+    }
+}
+
+@media(max-width:980px) and (min-width:680px) {
+    .sec1Card2 {
+        top: 40px;
+        width: 35vw;
     }
 }

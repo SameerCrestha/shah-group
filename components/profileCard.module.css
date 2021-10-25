@@ -1,6 +1,6 @@
 .container {
     width: 50%;
-    text-align: right;
+    text-align: left;
     display: flex;
     padding: 40px 10px;
     line-height: 20px;
@@ -29,10 +29,28 @@
     line-height: 21px;
 }
 
+.info {
+    margin-left: 20px;
+}
+
 .pic {
     flex-basis: 193px;
     flex-grow: 0;
     flex-shrink: 0;
     display: block;
     margin-left: 18px;
+}
+
+@media(max-width:800px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .container:hover {
+        margin-top: 0;
+    }
+
+
 }
