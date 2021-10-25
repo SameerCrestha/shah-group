@@ -20,7 +20,7 @@ export default function Layout({ children, page }) {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -181,7 +181,7 @@ export default function Layout({ children, page }) {
             </Link>
           </div>
           <div className={styles.cpright}>
-            © 2021 News Network.All Rights Reserved.
+            © 2021 Shahgroup.All Rights Reserved.
           </div>
         </footer>
       </body>

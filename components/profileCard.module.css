@@ -1,0 +1,38 @@
+.container {
+    width: 50%;
+    text-align: right;
+    display: flex;
+    padding: 40px 10px;
+    line-height: 20px;
+    transition: margin .3s ease-in-out;
+}
+
+
+.container:hover {
+    margin-top: -4px;
+}
+
+.container span {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.container small {
+    font-weight: 400;
+}
+
+.container p {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.pic {
+    flex-basis: 193px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: block;
+    margin-left: 18px;
+}

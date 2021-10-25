@@ -1,0 +1,101 @@
+.section1 {
+    background: url('../public/about-us/section1.png');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sec1Container {
+    position: absolute;
+    background: rgba(73, 71, 65, 0.43);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1Row1 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 26px;
+    text-decoration: underline;
+    text-underline-offset: 11px;
+    text-decoration-color: #C8C8C8;
+}
+
+.green {
+    color: #9FE885;
+}
+
+.sec1Row2 {
+    font-weight: 500;
+    font-size: 20px;
+    width: 83vw;
+    height: 140px;
+}
+
+.sec1Row3 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.section2,
+.section3 {
+    height: 450px;
+    width: 50%;
+    background: #1D2731;
+    display: inline-block;
+    padding: 30px 40px;
+}
+
+.section2::after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.74);
+    position: absolute;
+    width: 0.2px;
+    height: 360px;
+    top: 460px;
+    left: 50%;
+    display: block;
+}
+
+
+.section2 h3,
+.section3 h3 {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.section2 p,
+.section3 p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.section4 {
+    overflow: auto;
+    background: #566366;
+    height: 900px;
+    position: relative;
+}
+
+.section4 h3 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0px;
+    left: 71px;
+    top: 65px;
+}
+
+.section4>div {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
