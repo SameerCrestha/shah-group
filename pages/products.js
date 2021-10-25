@@ -1,6 +1,6 @@
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Layout from '../components/layout';
-import { useRouter } from 'next/router';
 import styles from '../styles/products.module.css';
 import ProductCart from '../components/ProductCart';
 import Container from 'react-bootstrap/Container';
@@ -16,13 +16,21 @@ export default function aboutUs() {
   return (
     <Layout page={3}>
       <section className={styles.section1}>
-        <p>
-          Without greate
-          <span>QUALITY</span>
-          it does <span>NOT</span>
-          matter <span>WHAT</span>
-          something <span>COSTS</span>
-        </p>
+        <div className={styles.descriptionBox}>
+          <p> Without greate</p>
+          <p>
+            <span>QUALITY</span>
+          </p>
+          <p>
+            it does <span>NOT</span>
+          </p>
+          <p>
+            matter <span>WHAT</span>
+          </p>
+          <p>
+            something <span>COSTS</span>
+          </p>
+        </div>
       </section>
 
       <Container fluid style={{ backgroundColor: '#1D2731' }}>
