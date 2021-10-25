@@ -49,7 +49,6 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
-
 }
 
 .footerSection1>div {
@@ -145,4 +144,27 @@
     width: 100%;
     text-align: center;
     font-size: 10px;
+}
+
+@media (max-width:600px) {
+    .footer {
+        height: 400px;
+    }
+
+    .footerSection1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLinks {
+        display: none;
+    }
+
+    .footerSection2 {
+        flex-direction: column;
+    }
+
+    .footerSection3 {
+        display: none;
+    }
 }
