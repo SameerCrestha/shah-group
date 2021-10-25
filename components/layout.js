@@ -9,6 +9,8 @@ import phone from '../public/logos/phone.svg';
 import twitter from '../public/logos/twitter.svg';
 import instagram from '../public/logos/insta.svg';
 import facebook from '../public/logos/fb.svg';
+
+import Header from '../components/Header';
 export default function Layout({ children, page }) {
   return (
     <>
@@ -25,7 +27,9 @@ export default function Layout({ children, page }) {
         />
       </Head>
       <body>
-        <header className={styles.header}>
+        <Header />
+
+        {/* <header className={styles.header}>
           <h1 className={styles.headerText}>Shah Group</h1>
           <Link href="/">
             <a className={page == 1 ? styles.active : ''}>Home</a>
@@ -42,8 +46,10 @@ export default function Layout({ children, page }) {
           <Link href="/contact-us">
             <a className={page == 5 ? styles.active : ''}>Contact us</a>
           </Link>
-        </header>
+        </header> */}
+
         {children}
+
         <footer className={styles.footer}>
           <hr className={styles.footerLine} />
           <div className={styles.footerSection1}>
