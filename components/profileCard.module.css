@@ -5,11 +5,12 @@
     padding: 40px 10px;
     line-height: 20px;
     transition: margin .3s ease-in-out;
+    color: rgba(245, 245, 245, 0.774);
 }
 
 
 .container:hover {
-    margin-top: -4px;
+    color: white;
 }
 
 .container span {
