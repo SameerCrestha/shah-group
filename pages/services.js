@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Layout from '../components/layout';
 import styles from '../styles/services.module.css';
-import checkSquare from "../public/logos/check-square.png"
+
 import FeatureCard from "../components/featureCard";
 import pics from "../public/services/exporter";
 export default function aboutUs(){
@@ -17,16 +17,16 @@ export default function aboutUs(){
             <h3 className={styles.sec2Header}>Features</h3>
             <div className={styles.sec2Container}>
                 <div>
-                <FeatureCard pic={checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
+                <FeatureCard pic={pics.checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
                 </div>
                 <div>
-                <FeatureCard pic={checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
+                <FeatureCard pic={pics.checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
                 </div>
                 <div>
-                <FeatureCard pic={checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
+                <FeatureCard pic={pics.checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
                 </div>
                 <div>
-                <FeatureCard pic={checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
+                <FeatureCard pic={pics.checkSquare} title="Quality Assurance" detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ipsum lacinia id ultrices vel. Lectus et consequat, ut ullamcorper."/>
                 </div>
             </div>
         </section>
