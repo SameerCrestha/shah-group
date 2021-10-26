@@ -170,7 +170,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container fluid style={styles.section4}>
+      <Container fluid className={styles.section4}>
         <Row className="d-flex flex-direction-column align-items-center">
           <p class>Costumer Reviews</p>
           <p>What our costumers are saying...</p>
