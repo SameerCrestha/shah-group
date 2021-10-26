@@ -23,7 +23,7 @@
 }
 
 .sec1Card1 span {
-  color: #9FE885;
+  color: #9fe885;
 }
 
 .sec1Card1 p {
@@ -41,10 +41,7 @@
   top: 140px;
 }
 
-.sec1Button {
-  position: absolute;
-  bottom: 100px;
-  left: 5vw;
+.button {
   width: 300px;
   height: 60px;
   border-radius: 10px;
@@ -54,6 +51,111 @@
   align-items: center;
   justify-content: center;
   color: #000000;
-  background-color: #9FE885;
+  background-color: #9fe885;
   font-size: 22px;
+}
+
+.sec1Button {
+  position: absolute;
+  bottom: 100px;
+  left: 5vw;
+  width: 300px;
+  height: 60px;
+}
+
+.section2_first_row {
+  background-image: url('../public/index/services.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100px;
+}
+
+@media only screen and (min-width: 600px) {
+  .section2_first_row {
+    height: 210px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section2_first_row {
+    height: 240px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .section2_first_row {
+    height: 330px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .section2_first_row {
+    height: 357px;
+  }
+}
+@media only screen and (min-width: 1320px) {
+  .section2_first_row {
+    height: 421px;
+  }
+}
+
+.section2 {
+  position: relative;
+}
+.section2_second_row {
+  min-height: 617px;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .section2_second_row_first_p {
+    max-width: 368px;
+  }
+}
+
+.section2_second_row_second_p {
+  max-width: 655px;
+}
+
+.section2_button {
+  height: 50px;
+}
+
+.section2_card_section {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section2_card_section :nth-child(1) {
+  left: 66px;
+  top: 265px;
+}
+.section2_card_section :nth-child(2) {
+  left: 414px;
+  top: 166px;
+}
+.section2_card_section :nth-child(3) {
+  left: 762px;
+  top: 265px;
+}
+.section2_card_section :nth-child(4) {
+  left: 1110px;
+  top: 166px;
+}
+
+.section2_card {
+  background-color: #1d2731;
+  width: 271px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+  z-index: 5;
+
+  position: absolute;
 }

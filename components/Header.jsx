@@ -11,7 +11,7 @@ export default function Header() {
                 <Navbar.Brand href="/">SHAH GROUP</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ms-auto text-white " >
+                    <Nav className="ms-auto" >
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/about-us">About us</Nav.Link>
                         <Nav.Link href="/products">Products</Nav.Link>
