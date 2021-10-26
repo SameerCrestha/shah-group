@@ -12,6 +12,14 @@ import trust from '../public/logos/trust.svg';
 import fast from '../public/logos/fast.svg';
 import refund from '../public/logos/refund.svg';
 
+import product1 from '../public/index/product1.png';
+import product2 from '../public/index/product2.png';
+import product3 from '../public/index/product3.png';
+import product4 from '../public/index/product4.png';
+import product5 from '../public/index/product5.png';
+import product6 from '../public/index/product6.png';
+import product7 from '../public/index/product7.png';
+
 export default function Home() {
   return (
     <Layout page={1}>
@@ -90,7 +98,8 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <Row className={styles.section2_first_row}></Row>
+        <Row className={`d-none d-sm-block ${styles.section2_first_row}`}></Row>
+
         <Row className={styles.section2_second_row}>
           <Row className="d-flex align-items-center">
             <Col sm="12" md="6" className="ps-md-5">
@@ -120,6 +129,51 @@ export default function Home() {
               </Link>
             </Col>
           </Row>
+        </Row>
+      </Container>
+
+      <Container fluid className={styles.section3}>
+        <Row>
+          <Col xs={6} sm={3} className={styles.section3_first_cart}>
+            <p className="fs-5 fs-sm-3 fs-m-2">Our</p>
+            <p className="fs-5 fs-sm-3 fs-m-2">Products</p>
+            <a href="/products">
+              <p
+                className="fs-6 fs-sm-5"
+                style={{ color: '#9FE885' }}
+              >{`More>>`}</p>
+            </a>
+          </Col>
+          <Col xs={6} sm={3}>
+            <Image src={product1} width="258" height="354" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <Image src={product2} width="258" height="354" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <Image src={product3} width="258" height="354" />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={6} sm={3}>
+            <Image src={product4} width="258" height="354" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <Image src={product5} width="258" height="354" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <Image src={product6} width="258" height="354" />
+          </Col>
+          <Col xs={6} sm={3}>
+            <Image src={product7} width="258" height="354" />
+          </Col>
+        </Row>
+      </Container>
+
+      <Container fluid style={styles.section4}>
+        <Row className="d-flex flex-direction-column align-items-center">
+          <p class>Costumer Reviews</p>
+          <p>What our costumers are saying...</p>
         </Row>
       </Container>
     </Layout>
