@@ -96,14 +96,20 @@
   position: relative;
 }
 .section2_second_row {
-  min-height: 617px;
+  min-height: 342px;
   align-items: flex-end;
+  padding-top: 20px;
   padding-bottom: 50px;
   position: relative;
 }
 @media only screen and (min-width: 768px) {
   .section2_second_row_first_p {
     max-width: 368px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section2_second_row {
+    min-height: 617px;
   }
 }
 
@@ -115,43 +121,40 @@
   height: 50px;
 }
 
-.section2_card_section {
-  position: relative;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.section2_card_section :nth-child(1) {
-  left: 66px;
-  top: 265px;
-}
-.section2_card_section :nth-child(2) {
-  left: 414px;
-  top: 166px;
-}
-.section2_card_section :nth-child(3) {
-  left: 762px;
-  top: 265px;
-}
-.section2_card_section :nth-child(4) {
-  left: 1110px;
-  top: 166px;
-}
-
 .section2_card {
   background-color: #1d2731;
-  width: 271px;
+  max-width: 229px;
   height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px;
   z-index: 5;
-
   position: absolute;
+}
+
+@media only screen and (min-width: 1200px) {
+  .section2_card {
+    max-width: 271px;
+  }
+}
+
+.section2_card1 {
+  left: 2vw;
+  top: 265px;
+}
+.section2_card2 {
+  left: 26.5vw;
+  top: 166px;
+}
+.section2_card3 {
+  left: 51vw;
+  top: 265px;
+}
+.section2_card4 {
+  left: 75.5vw;
+  top: 166px;
 }
 
 .section3 {
@@ -182,4 +185,47 @@
 .section4 {
   background: #000;
   padding: 10px;
+}
+
+.section4_card {
+  max-width: 350px;
+  min-width: 280px;
+  height: 513px;
+  position: relative;
+  background-color: #1d2731;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 15px 15px 25px;
+}
+
+.section4_card_image {
+  z-index: 1;
+}
+
+.section4_card_text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  line-height: 27px;
+  display: flex;
+  z-index: 1;
+}
+
+.section4_card_icons {
+  display: flex;
+  justify-content: space-between;
+  width: 103px;
+  z-index: 1;
+}
+
+.section4_card_wave {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
 }

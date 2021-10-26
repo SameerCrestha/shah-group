@@ -7,6 +7,7 @@ import images from '../public/index/sec1card2.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 import quality from '../public/logos/quality.svg';
 import trust from '../public/logos/trust.svg';
 import fast from '../public/logos/fast.svg';
@@ -19,6 +20,19 @@ import product4 from '../public/index/product4.png';
 import product5 from '../public/index/product5.png';
 import product6 from '../public/index/product6.png';
 import product7 from '../public/index/product7.png';
+
+import peope1 from '../public/index/review_face1.png';
+import peope2 from '../public/index/review_face2.png';
+import peope3 from '../public/index/review_face3.png';
+
+import wave1 from '../public/index/wave1.png';
+import wave2 from '../public/index/wave2.png';
+import wave3 from '../public/index/wave3.png';
+import wave4 from '../public/index/wave4.png';
+
+import fb from '../public/logos/fb.svg';
+import insta from '../public/logos/insta.svg';
+import twitter from '../public/logos/twitter.svg';
 
 export default function Home() {
   return (
@@ -44,16 +58,9 @@ export default function Home() {
       </section>
 
       <Container fluid className={styles.section2}>
-        <div className={styles.section2_card_section}>
-          <div className={styles.section2_card}>
-            <div>
-              <Image
-                src={quality}
-                width={112}
-                height={112}
-                layout="responsive"
-              />
-            </div>
+        <Row className={`d-none d-lg-block ${styles.section2_card_section}`}>
+          <Col className={`${styles.section2_card} ${styles.section2_card1}`}>
+            <Image src={quality} width={112} height={112} />
             <p className="fs-3">QUALITY</p>
             <p className="fs-6 text-center">
               We provide our best service to our client, fast efficient and
@@ -62,8 +69,8 @@ export default function Home() {
             <a href="/services">
               <p className="fs-5">{`More >>`}</p>
             </a>
-          </div>
-          <div className={styles.section2_card}>
+          </Col>
+          <Col className={`${styles.section2_card} ${styles.section2_card2}`}>
             <Image src={trust} width={112} height={112} />
 
             <p className="fs-3">TRUST</p>
@@ -74,8 +81,8 @@ export default function Home() {
             <a href="/services">
               <p className="fs-5">{`More >>`}</p>
             </a>
-          </div>
-          <div className={styles.section2_card}>
+          </Col>
+          <Col className={`${styles.section2_card} ${styles.section2_card3}`}>
             <Image src={refund} width={112} height={112} />
             <p className="fs-3">REFUND</p>
             <p className="fs-6 text-center">
@@ -85,8 +92,8 @@ export default function Home() {
             <a href="/services">
               <p className="fs-5">{`More >>`}</p>
             </a>
-          </div>
-          <div className={styles.section2_card}>
+          </Col>
+          <Col className={`${styles.section2_card} ${styles.section2_card4}`}>
             <Image src={fast} width={112} height={112} />
             <p className="fs-3">FAST</p>
             <p className="fs-6 text-center">
@@ -96,9 +103,10 @@ export default function Home() {
             <a href="/services">
               <p className="fs-5">{`More >>`}</p>
             </a>
-          </div>
-        </div>
-        <Row className={`d-none d-sm-block ${styles.section2_first_row}`}></Row>
+          </Col>
+        </Row>
+
+        <Row className={`d-none d-md-block ${styles.section2_first_row}`}></Row>
 
         <Row className={styles.section2_second_row}>
           <Row className="d-flex align-items-center">
@@ -171,9 +179,172 @@ export default function Home() {
       </Container>
 
       <Container fluid className={styles.section4}>
-        <Row className="d-flex flex-direction-column align-items-center">
-          <p class>Costumer Reviews</p>
-          <p>What our costumers are saying...</p>
+        <Row>
+          <div className="m-auto d-flex flex-column align-items-center">
+            <p className="fs-3 fs-sm-2 fs-md-1">Costumer Reviews</p>
+            <p className="fs-6">What our costumers are saying...</p>
+          </div>
+        </Row>
+
+        <Row
+          sm={2}
+          lg={4}
+          className="d-flex justify-content-around align-items-center"
+        >
+          <Col>
+            <div className={`m-auto mb-4 ${styles.section4_card}`}>
+              <p className={styles.section4_card_text}>
+                Amet tempor consectetur eu sit sit. Eiusmod eiusmod do aute
+                occaecat qui eiusmod voluptate esse laborum ex. Elit adipisicing
+                proident ea deserunt dolor. Duis proident laboris officia non.
+              </p>
+
+              <div className={styles.section4_card_image}>
+                <Image src={peope1} width={99} height={99} />
+              </div>
+              <div className={styles.section4_card_icons}>
+                <a href="https://www.facebook.com" target="_blank">
+                  <Image className="pointer" src={fb} width={24} height={24} />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={insta}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={twitter}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
+              <div className={styles.section4_card_wave}>
+                <Image src={wave1} />
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div
+              className={`m-auto mb-4 ${styles.section4_card} ${styles.section4_card2}`}
+            >
+              <p className={styles.section4_card_text}>
+                Amet tempor consectetur eu sit sit. Eiusmod eiusmod do aute
+                occaecat qui eiusmod voluptate esse laborum ex. Elit adipisicing
+                proident ea deserunt dolor. Duis proident laboris officia non.
+              </p>
+
+              <div className={styles.section4_card_image}>
+                <Image src={peope2} width={99} height={99} />
+              </div>
+              <div className={styles.section4_card_icons}>
+                <a href="https://www.facebook.com" target="_blank">
+                  <Image className="pointer" src={fb} width={24} height={24} />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={insta}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={twitter}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
+              <div className={styles.section4_card_wave}>
+                <Image src={wave2} height={210} />
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div
+              className={`m-auto mb-4 ${styles.section4_card} ${styles.section4_card3}`}
+            >
+              <p className={styles.section4_card_text}>
+                Amet tempor consectetur eu sit sit. Eiusmod eiusmod do aute
+                occaecat qui eiusmod voluptate esse laborum ex. Elit adipisicing
+                proident ea deserunt dolor. Duis proident laboris officia non.
+              </p>
+
+              <div className={styles.section4_card_image}>
+                <Image src={peope3} width={99} height={99} />
+              </div>
+              <div className={styles.section4_card_icons}>
+                <a href="https://www.facebook.com" target="_blank">
+                  <Image className="pointer" src={fb} width={24} height={24} />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={insta}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={twitter}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
+              <div className={styles.section4_card_wave}>
+                <Image src={wave3} height={210} />
+              </div>
+            </div>
+          </Col>
+          <Col className="d-lg-none">
+            <div
+              className={`m-auto mb-4 ${styles.section4_card} ${styles.section4_card3}`}
+            >
+              <p className={styles.section4_card_text}>
+                Amet tempor consectetur eu sit sit. Eiusmod eiusmod do aute
+                occaecat qui eiusmod voluptate esse laborum ex. Elit adipisicing
+                proident ea deserunt dolor. Duis proident laboris officia non.
+              </p>
+
+              <div className={styles.section4_card_image}>
+                <Image src={peope3} width={99} height={99} />
+              </div>
+              <div className={styles.section4_card_icons}>
+                <a href="https://www.facebook.com" target="_blank">
+                  <Image className="pointer" src={fb} width={24} height={24} />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={insta}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <Image
+                    className="pointer"
+                    src={twitter}
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
+              <div className={styles.section4_card_wave}>
+                <Image src={wave4} />
+              </div>
+            </div>
+          </Col>
         </Row>
       </Container>
     </Layout>
