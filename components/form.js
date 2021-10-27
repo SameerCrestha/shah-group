@@ -11,20 +11,20 @@ export default function Form(){
         <div className={styles.formRow1}>
             <div className={styles.formCell}>
             <label htmlFor="fname">First name</label>
-            <input type="text" id="fname" name="First Name"/>
+            <input type="text" id="fname" name="FirstName" required/>
             </div>
             <div className={styles.formCell}>
             <label htmlFor="lname">Last name</label>
-            <input type="text" id="lname" name="Last Name"/>    
+            <input type="text" id="lname" name="LastName" required/>    
             </div>
         </div>
         <div className={styles.formCell}>
         <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="Email"/>
+        <input type="email" id="email" name="Email" required/>
         </div>
         <div className={styles.formCell}>
         <label htmlFor="message">Message</label>
-        <input type="text" id="message" name="Message" />
+        <input type="text" id="message" name="Message" required />
         </div>
         <div className={styles.formCell}>
         <label htmlFor="detail">Additional Details</label>
