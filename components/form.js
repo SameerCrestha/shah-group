@@ -8,7 +8,7 @@ export default function Form(){
         <form className={styles.container} action="https://formsubmit.co/ddav.crestha@gmail.com" method="POST" >
         {/* {success?<div className={styles.message}>Message sent</div>:""} */}
         <input type="hidden" name="_subject" value="Enquiry"/>
-        <input type="hidden" name="_next" value="https://localhost:3000/thankyou"/>
+        <input type="hidden" name="_next" value="https://shahgroup.netlify.app/thankyou"/>
         <input type="hidden" name="_captcha" value="false"/>
         <input type="hidden" name="_template" value="table"/>
         <input type="text" name="_honey" className={styles.hide}/>
