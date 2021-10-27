@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect ,useRouter} from 'react';
 export default function Thankyou(){
     const router=useRouter();
     useEffect(()=>{
