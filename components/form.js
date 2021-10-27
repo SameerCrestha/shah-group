@@ -1,4 +1,5 @@
 import styles from "./form.module.css";
+import Script from "next/script"
 export default function Form(){
     return(
         <form className={styles.container} action="https://formsubmit.co/ddav.crestha@gmail.com" method="POST" >
@@ -30,6 +31,8 @@ export default function Form(){
         <label htmlFor="detail">Additional Details</label>
         <textarea id="detail" name="Additional Details" rows="10" />
         </div>
+        <Script src="https://www.google.com/recaptcha/api.js"/>
+        <div className="g-recaptcha" data-sitekey="6LeAmPkcAAAAAHHzRTTFzfxVWiX2hJR-NHMCOUeV"></div>
         <div className={styles.formRowLast}>
         <button type="submit">Send Message</button>
         </div>
