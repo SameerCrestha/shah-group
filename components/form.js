@@ -1,9 +1,5 @@
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 import styles from "./form.module.css";
 export default function Form(){
-    
-    
     return(
         <form className={styles.container} action="https://formsubmit.co/ddav.crestha@gmail.com" method="POST" >
         {/* {success?<div className={styles.message}>Message sent</div>:""} */}
