@@ -49,7 +49,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.sec1Card2}>
-          <Image src={images} placeholder="blur" layout="fill" />
+          <Image src={images} placeholder="blur" layout="responsive" />
         </div>
         <Link href="/contact-us">
           <a>
