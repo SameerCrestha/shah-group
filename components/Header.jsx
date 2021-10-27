@@ -2,7 +2,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Image from 'next/image'
-import logo from '../public/logos/logo.jpg'
+import logo from '../public/logos/logo.JPG'
 
 
 
