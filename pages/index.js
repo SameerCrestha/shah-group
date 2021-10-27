@@ -358,7 +358,7 @@ export default function Home() {
       >
         <Row xs={1} md={2} className="my-5 d-flex  justify-content-start">
           <Col md="4">
-            <div className=" d-flex  justify-content-center align-items-md-start ">
+            <div className=" d-flex  justify-content-center justify-content-md-start align-items-md-start ">
               <div className=" d-flex flex-column align-items-center">
                 <Image src={Rostal_shah} width={321} height={400} />
                 <p style={{ fontSize: '0.7rem' }}>Rostal shah (CEO)</p>
@@ -391,7 +391,7 @@ export default function Home() {
           className="my-5  d-flex flex-md-row-reverse justify-content-end"
         >
           <Col md="4">
-            <div className=" d-flex  justify-content-center align-items-md-start ">
+            <div className=" d-flex  justify-content-center justify-content-md-start  align-items-md-start">
               <div className=" d-flex flex-column align-items-center">
                 <Image src={manager} width={325} height={400} />
                 <p style={{ fontSize: '0.7rem' }}>Rostal shah (manager)</p>
