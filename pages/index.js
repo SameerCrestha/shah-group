@@ -34,6 +34,9 @@ import fb from '../public/logos/fb.svg';
 import insta from '../public/logos/insta.svg';
 import twitter from '../public/logos/twitter.svg';
 
+import Rostal_shah from '../public/index/Rostal_shah.png';
+import manager from '../public/index/manager.png';
+
 export default function Home() {
   return (
     <Layout page={1}>
@@ -342,6 +345,78 @@ export default function Home() {
               </div>
               <div className={styles.section4_card_wave}>
                 <Image src={wave4} />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container
+        fluid
+        className="p-2 p-sm-3 p-md-4 p-lg-5"
+        style={{ background: '#1D2731' }}
+      >
+        <Row xs={1} md={2} className="my-5 d-flex  justify-content-start">
+          <Col md="4">
+            <div className=" d-flex  justify-content-center align-items-md-start ">
+              <div className=" d-flex flex-column align-items-center">
+                <Image src={Rostal_shah} width={321} height={400} />
+                <p style={{ fontSize: '0.7rem' }}>Rostal shah (CEO)</p>
+              </div>
+            </div>
+          </Col>
+          <Col md="8">
+            <div>
+              <h2>Vision</h2>
+              <p className="mt-3">
+                Exercitation nisi aliqua occaecat dolore sunt aliqua elit aliqua
+                duis voluptate duis Lorem eu. Laboris reprehenderit ullamco anim
+                mollit velit exercitation labore. Pariatur eu labore anim ad
+                voluptate consequat et. Ex dolor nostrud ea voluptate aliquip
+                sint aliqua cupidatat sunt. Duis qui voluptate commodo ex.
+              </p>
+              <p>
+                Exercitation nisi aliqua occaecat dolore sunt aliqua elit aliqua
+                duis voluptate duis Lorem eu. Laboris reprehenderit ullamco anim
+                mollit velit exercitation labore. Pariatur eu labore anim ad
+                voluptate consequat et. Ex dolor nostrud ea voluptate aliquip
+                sint aliqua cupidatat sunt. Duis qui voluptate commodo ex.
+              </p>
+            </div>
+          </Col>
+        </Row>
+        <Row
+          xs={1}
+          md={2}
+          className="my-5  d-flex flex-md-row-reverse justify-content-end"
+        >
+          <Col md="4">
+            <div className=" d-flex  justify-content-center align-items-md-start ">
+              <div className=" d-flex flex-column align-items-center">
+                <Image src={manager} width={325} height={400} />
+                <p style={{ fontSize: '0.7rem' }}>Rostal shah (manager)</p>
+              </div>
+            </div>
+          </Col>
+
+          <Col md="8">
+            <div className="d-flex flex-column justify-content-around">
+              <h2>Mision</h2>
+              <div className="mt-3" style={{ maxWidth: '660px' }}>
+                <p>
+                  Exercitation nisi aliqua occaecat dolore sunt aliqua elit
+                  aliqua duis voluptate duis Lorem eu. Laboris reprehenderit
+                  ullamco anim mollit velit exercitation labore. Pariatur eu
+                  labore anim ad
+                </p>
+                <p>
+                  Exercitation nisi aliqua occaecat dolore sunt aliqua elit
+                  aliqua duis voluptate duis Lorem eu. Laboris reprehenderit
+                  ullamco anim mollit velit exercitation labore. Pariatur eu
+                  labore anim ad voluptate consequat et. Ex dolor nostrud ea
+                  voluptate aliquip sint aliqua cupidatat sunt. Duis qui
+                  voluptate commodo ex.
+                </p>
               </div>
             </div>
           </Col>
