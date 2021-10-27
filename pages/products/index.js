@@ -1,16 +1,16 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Layout from '../components/layout';
-import styles from '../styles/products.module.css';
-import ProductCart from '../components/ProductCart';
+import Layout from '../../components/layout';
+import styles from '../../styles/products.module.css';
+import ProductCart from '../../components/ProductCart';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import star from '../public/logos/star.svg';
-import verified from '../public/logos/verified.svg';
+import star from '../../public/logos/star.svg';
+import verified from '../../public/logos/verified.svg';
 
-export default function aboutUs() {
+export default function products() {
   const router = useRouter();
 
   return (
@@ -49,42 +49,42 @@ export default function aboutUs() {
         <Row className="d-flex justify-content-around">
           <Col xs sm="6" md="4" className="d-flex justify-content-around">
             <ProductCart
-              img={require('../public/products/ghee.png')}
+              img={require('../../public/products/ghee.png')}
               title="Nandi Ghee"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
             />
           </Col>
           <Col xs sm="6" md="4" className="d-flex justify-content-around">
             <ProductCart
-              img={require('../public/products/ghee.png')}
+              img={require('../../public/products/ghee.png')}
               title="Nandi Ghee"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
             />
           </Col>
           <Col xs sm="6" md="4" className="d-flex justify-content-around">
             <ProductCart
-              img={require('../public/products/ghee.png')}
+              img={require('../../public/products/ghee.png')}
               title="Nandi Ghee"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
             />
           </Col>
           <Col xs sm="6" md="4" className="d-flex justify-content-around">
             <ProductCart
-              img={require('../public/products/ghee.png')}
+              img={require('../../public/products/ghee.png')}
               title="Nandi Ghee"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
             />
           </Col>
           <Col xs sm="6" md="4" className="d-flex justify-content-around">
             <ProductCart
-              img={require('../public/products/ghee.png')}
+              img={require('../../public/products/ghee.png')}
               title="Nandi Ghee"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
             />
           </Col>
           <Col xs sm="6" md="4" className="d-flex justify-content-around">
             <ProductCart
-              img={require('../public/products/ghee.png')}
+              img={require('../../public/products/ghee.png')}
               title="Nandi Ghee"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
             />
@@ -125,7 +125,7 @@ export default function aboutUs() {
                 maxHeight: '639px',
               }}
             >
-              <Image src={require('../public/products/female.png')} />
+              <Image src={require('../../public/products/female.png')} />
             </div>
           </Col>
         </Row>
@@ -139,7 +139,7 @@ export default function aboutUs() {
                 maxHeight: '639px',
               }}
             >
-              <Image src={require('../public/products/female.png')} />
+              <Image src={require('../../public/products/female.png')} />
             </div>
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
@@ -199,7 +199,7 @@ export default function aboutUs() {
                 maxHeight: '639px',
               }}
             >
-              <Image src={require('../public/products/female.png')} />
+              <Image src={require('../../public/products/female.png')} />
             </div>
           </Col>
         </Row>
