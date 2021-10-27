@@ -36,10 +36,12 @@
 .sec1Card2 {
   position: absolute;
   width: 35vw;
-  height: 270px;
+  height: auto;
   right: 50px;
   top: 140px;
 }
+
+
 
 .button {
   width: 300px;
@@ -59,8 +61,17 @@
   position: absolute;
   bottom: 100px;
   left: 5vw;
-  width: 300px;
   height: 60px;
+}
+@media (max-width:760px){
+  .sec1Card2{
+    display: none;
+  }
+  .sec1Card1{
+    width: 100%;
+    left:0;
+  }
+  
 }
 
 .section2_first_row {
@@ -80,6 +91,7 @@
   .section2_first_row {
     height: 330px;
   }
+  
 }
 @media only screen and (min-width: 1140px) {
   .section2_first_row {
