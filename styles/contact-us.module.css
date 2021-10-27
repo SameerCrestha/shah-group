@@ -82,7 +82,7 @@
 .sec2Card1 {
     position: absolute;
     width: 570px;
-    height: 650px;
+    height: 680px;
     left: 90px;
     top: -125px;
     background: #1D2731;
@@ -129,7 +129,7 @@
     }
 
     .section2 {
-        height: 650px;
+        height: 680px;
     }
 }
 
