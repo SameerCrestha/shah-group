@@ -27,7 +27,6 @@ import insta from '../public/logos/insta.svg';
 import twitter from '../public/logos/twitter.svg';
 
 import Rostal_shah from '../public/index/Rostal_shah.png';
-import manager from '../public/index/manager.png';
 
 import product_db from '../public/products/products';
 
@@ -396,15 +395,15 @@ export default function Home() {
 
       <Container fluid className="p-2 p-sm-3 p-md-4 p-lg-5 bg-gray">
         <Row xs={1} md={2} className="my-5 d-flex  justify-content-start">
-          <Col md="4">
+          <Col md="5">
             <div className=" d-flex  justify-content-center justify-content-md-start align-items-md-start ">
               <div className=" d-flex flex-column align-items-center">
-                <Image src={Rostal_shah} width={321} height={400} />
+                <Image src={Rostal_shah} width={563} height={700} />
                 <p style={{ fontSize: '0.7rem' }}>Rostal shah (CEO)</p>
               </div>
             </div>
           </Col>
-          <Col md="8">
+          <Col md="7">
             <div>
               <h2>Vision</h2>
               <p className="mt-3">
@@ -422,26 +421,32 @@ export default function Home() {
                 sint aliqua cupidatat sunt. Duis qui voluptate commodo ex.
               </p>
             </div>
-          </Col>
-        </Row>
-        <Row
-          xs={1}
-          md={2}
-          className="my-5  d-flex flex-md-row-reverse justify-content-end"
-        >
-          <Col md="4">
-            <div className=" d-flex  justify-content-center justify-content-md-start  align-items-md-start">
-              <div className=" d-flex flex-column align-items-center">
-                <Image src={manager} width={325} height={400} />
-                <p style={{ fontSize: '0.7rem' }}>Rostal shah (manager)</p>
+            <div className="d-md-none  d-lg-flex flex-column justify-content-around">
+              <h2>Mision</h2>
+              <div className="mt-3">
+                <p>
+                  Exercitation nisi aliqua occaecat dolore sunt aliqua elit
+                  aliqua duis voluptate duis Lorem eu. Laboris reprehenderit
+                  ullamco anim mollit velit exercitation labore. Pariatur eu
+                  labore anim ad
+                </p>
+                <p>
+                  Exercitation nisi aliqua occaecat dolore sunt aliqua elit
+                  aliqua duis voluptate duis Lorem eu. Laboris reprehenderit
+                  ullamco anim mollit velit exercitation labore. Pariatur eu
+                  labore anim ad voluptate consequat et. Ex dolor nostrud ea
+                  voluptate aliquip sint aliqua cupidatat sunt. Duis qui
+                  voluptate commodo ex.
+                </p>
               </div>
             </div>
           </Col>
-
-          <Col md="8">
-            <div className="d-flex flex-column justify-content-around">
+        </Row>
+        <Row className="d-none d-md-block d-lg-none">
+          <Col>
+            <div className="d-lg-flex flex-column justify-content-around">
               <h2>Mision</h2>
-              <div className="mt-3" style={{ maxWidth: '660px' }}>
+              <div className="mt-3">
                 <p>
                   Exercitation nisi aliqua occaecat dolore sunt aliqua elit
                   aliqua duis voluptate duis Lorem eu. Laboris reprehenderit
