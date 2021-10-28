@@ -8,7 +8,13 @@
     margin-top: 20px;
     width: 100%;
 }
-
+.hide{
+    display: none;
+}
+.message{
+    position: fixed;
+    left:50vw;
+}
 .formCell {
     display: flex;
     flex-direction: column;
