@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Link from 'next/link';
 import Layout from '../../components/layout';
 import styles from '../../styles/products.module.css';
 import ProductCart from '../../components/ProductCart';
@@ -9,6 +10,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import star from '../../public/logos/star.svg';
 import verified from '../../public/logos/verified.svg';
+
+import product_db from '../../public/products/products';
 
 export default function products() {
   const router = useRouter();
@@ -33,7 +36,7 @@ export default function products() {
         </div>
       </section>
 
-      <Container fluid style={{ backgroundColor: '#1D2731' }}>
+      <Container fluid className="bg-gray pb-3 pb-sm-5">
         <Row>
           <div
             className="mx-auto text-center my-3"
@@ -46,8 +49,18 @@ export default function products() {
           </div>
         </Row>
 
-        <Row className="d-flex justify-content-around">
-          <Col xs sm="6" md="4" className="d-flex justify-content-around">
+        <Row className="d-flex justify-content-around ">
+          {Object.values(product_db).map((product) => (
+            <Col xs sm="6" md="4" className="d-flex justify-content-around">
+              <ProductCart
+                id={product.id}
+                img={product.img}
+                title={product.name}
+                subTitle={product.desc1}
+              />
+            </Col>
+          ))}
+          {/* <Col xs sm="6" md="4" className="d-flex justify-content-around">
             <ProductCart
               img={require('../../public/products/ghee.png')}
               title="Nandi Ghee"
@@ -88,7 +101,7 @@ export default function products() {
               title="Nandi Ghee"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
 

@@ -2,13 +2,13 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Image from 'next/image'
-import logo from '../public/logos/logo.jpg'
+import logo from '../public/logos/logo.png'
 
 
 
 export default function Header() {
     return (
-        <Navbar collapseOnSelect expand="md" bg='dark' variant="dark" fixed='top' >
+        <Navbar collapseOnSelect expand="md" bg='dark' variant="dark" sticky='top' >
             <Container>
                 <Navbar.Brand href="/"><Image src={logo} width={112} height={50} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

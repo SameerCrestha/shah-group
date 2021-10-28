@@ -13,14 +13,6 @@ import trust from '../public/logos/trust.svg';
 import fast from '../public/logos/fast.svg';
 import refund from '../public/logos/refund.svg';
 
-import product1 from '../public/index/product1.png';
-import product2 from '../public/index/product2.png';
-import product3 from '../public/index/product3.png';
-import product4 from '../public/index/product4.png';
-import product5 from '../public/index/product5.png';
-import product6 from '../public/index/product6.png';
-import product7 from '../public/index/product7.png';
-
 import peope1 from '../public/index/review_face1.png';
 import peope2 from '../public/index/review_face2.png';
 import peope3 from '../public/index/review_face3.png';
@@ -36,6 +28,8 @@ import twitter from '../public/logos/twitter.svg';
 
 import Rostal_shah from '../public/index/Rostal_shah.png';
 import manager from '../public/index/manager.png';
+
+import product_db from '../public/products/products';
 
 export default function Home() {
   return (
@@ -156,27 +150,76 @@ export default function Home() {
             </a>
           </Col>
           <Col xs={6} sm={3}>
-            <Image src={product1} width="258" height="354" />
+            <Link href="/products/1">
+              <Image
+                className="pointer"
+                src={product_db[1].img}
+                width="258"
+                height="354"
+              />
+            </Link>
           </Col>
           <Col xs={6} sm={3}>
-            <Image src={product2} width="258" height="354" />
+            <Link href="/products/2">
+              <Image
+                className="pointer"
+                src={product_db[2].img}
+                width="258"
+                height="354"
+              />
+            </Link>
           </Col>
           <Col xs={6} sm={3}>
-            <Image src={product3} width="258" height="354" />
+            <Link href="/products/3">
+              <Image
+                className="pointer"
+                src={product_db[3].img}
+                width="258"
+                height="354"
+              />
+            </Link>
           </Col>
         </Row>
         <Row>
           <Col xs={6} sm={3}>
-            <Image src={product4} width="258" height="354" />
+            <Link href="/products/4">
+              <Image
+                className="pointer"
+                src={product_db[4].img}
+                width="258"
+                height="354"
+              />
+            </Link>
           </Col>
           <Col xs={6} sm={3}>
-            <Image src={product5} width="258" height="354" />
+            <Link href="/products/5">
+              <Image
+                className="pointer"
+                src={product_db[5].img}
+                width="258"
+                height="354"
+              />
+            </Link>
           </Col>
           <Col xs={6} sm={3}>
-            <Image src={product6} width="258" height="354" />
+            <Link href="/products/6">
+              <Image
+                className="pointer"
+                src={product_db[6].img}
+                width="258"
+                height="354"
+              />
+            </Link>
           </Col>
           <Col xs={6} sm={3}>
-            <Image src={product7} width="258" height="354" />
+            <Link href="/products/7">
+              <Image
+                className="pointer"
+                src={product_db[7].img}
+                width="258"
+                height="354"
+              />
+            </Link>
           </Col>
         </Row>
       </Container>
@@ -351,11 +394,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container
-        fluid
-        className="p-2 p-sm-3 p-md-4 p-lg-5"
-        style={{ background: '#1D2731' }}
-      >
+      <Container fluid className="p-2 p-sm-3 p-md-4 p-lg-5 bg-gray">
         <Row xs={1} md={2} className="my-5 d-flex  justify-content-start">
           <Col md="4">
             <div className=" d-flex  justify-content-center justify-content-md-start align-items-md-start ">
