@@ -29,25 +29,6 @@ export default function Layout({ children, page }) {
       <body>
         <Header />
 
-        {/* <header className={styles.header}>
-          <h1 className={styles.headerText}>Shah Group</h1>
-          <Link href="/">
-            <a className={page == 1 ? styles.active : ''}>Home</a>
-          </Link>
-          <Link href="/about-us">
-            <a className={page == 2 ? styles.active : ''}>About us</a>
-          </Link>
-          <Link href="/products">
-            <a className={page == 3 ? styles.active : ''}>Products</a>
-          </Link>
-          <Link href="/services">
-            <a className={page == 4 ? styles.active : ''}>Services</a>
-          </Link>
-          <Link href="/contact-us">
-            <a className={page == 5 ? styles.active : ''}>Contact us</a>
-          </Link>
-        </header> */}
-
         {children}
 
         <footer className={styles.footer}>
@@ -166,7 +147,7 @@ export default function Layout({ children, page }) {
             </div>
           </div>
           <hr className={styles.footerLine} />
-          <div className={styles.footerSection3}>
+          {/* <div className={styles.footerSection3}>
             <Link href="/">
               <a>Terms of use</a>
             </Link>
@@ -176,18 +157,19 @@ export default function Layout({ children, page }) {
             <Link href="/">
               <a>About us</a>
             </Link>
-            <Link href="/">
-              <a>NewsLetter</a>
-            </Link>
+      
             <Link href="/">
               <a>License Footage</a>
             </Link>
             <Link href="/">
               <a>Accesibility</a>
             </Link>
+          </div> */}
+          <div className={styles.cpright}>
+            © 2021 Shahgroup.All Rights Reserved.
           </div>
-          <div className={styles.cpright}>© 2021 Shahgroup.All Rights Reserved.</div>
         </footer>
-      </body></>
+      </body>
+    </>
   );
 }

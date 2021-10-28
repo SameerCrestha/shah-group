@@ -36,7 +36,7 @@ export default function products() {
         </div>
       </section>
 
-      <Container fluid className="bg-gray pb-3 pb-sm-5">
+      <Container as="section" fluid className="bg-gray pb-3 pb-sm-5">
         <Row>
           <div
             className="mx-auto text-center my-3"
@@ -60,52 +60,10 @@ export default function products() {
               />
             </Col>
           ))}
-          {/* <Col xs sm="6" md="4" className="d-flex justify-content-around">
-            <ProductCart
-              img={require('../../public/products/ghee.png')}
-              title="Nandi Ghee"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
-            />
-          </Col>
-          <Col xs sm="6" md="4" className="d-flex justify-content-around">
-            <ProductCart
-              img={require('../../public/products/ghee.png')}
-              title="Nandi Ghee"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
-            />
-          </Col>
-          <Col xs sm="6" md="4" className="d-flex justify-content-around">
-            <ProductCart
-              img={require('../../public/products/ghee.png')}
-              title="Nandi Ghee"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
-            />
-          </Col>
-          <Col xs sm="6" md="4" className="d-flex justify-content-around">
-            <ProductCart
-              img={require('../../public/products/ghee.png')}
-              title="Nandi Ghee"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
-            />
-          </Col>
-          <Col xs sm="6" md="4" className="d-flex justify-content-around">
-            <ProductCart
-              img={require('../../public/products/ghee.png')}
-              title="Nandi Ghee"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
-            />
-          </Col>
-          <Col xs sm="6" md="4" className="d-flex justify-content-around">
-            <ProductCart
-              img={require('../../public/products/ghee.png')}
-              title="Nandi Ghee"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar lacus, cursus nisi ut. Urna, sit sed proin adipiscing vestibulum odio. In morbi."
-            />
-          </Col> */}
         </Row>
       </Container>
 
-      <Container fluid>
+      <Container as="section" fluid>
         <Row style={{ backgroundColor: '#AA131D', minWidth: '300px' }}>
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <div
@@ -138,7 +96,11 @@ export default function products() {
                 maxHeight: '639px',
               }}
             >
-              <Image src={require('../../public/products/female.png')} />
+              <Image
+                src={require('../../public/products/cardom_p.png')}
+                width={657}
+                height={639}
+              />
             </div>
           </Col>
         </Row>
@@ -152,7 +114,11 @@ export default function products() {
                 maxHeight: '639px',
               }}
             >
-              <Image src={require('../../public/products/female.png')} />
+              <Image
+                src={require('../../public/products/yarn_p.png')}
+                width={657}
+                height={639}
+              />
             </div>
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
@@ -212,13 +178,22 @@ export default function products() {
                 maxHeight: '639px',
               }}
             >
-              <Image src={require('../../public/products/female.png')} />
+              <Image
+                src={require('../../public/products/cardom_p.png')}
+                width={657}
+                height={639}
+              />
             </div>
           </Col>
         </Row>
       </Container>
 
-      <Container fluid className="pt-5" style={{ backgroundColor: '#000' }}>
+      <Container
+        as="section"
+        fluid
+        className="pt-5"
+        style={{ backgroundColor: '#000' }}
+      >
         <Row className="mt-5 d-flex justify-content-around">
           <Col
             xs

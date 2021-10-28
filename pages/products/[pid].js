@@ -9,7 +9,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Spinner from 'react-bootstrap/Spinner';
 
-import ghee from '../../public/products/ghee_p.png';
 import product_db from '../../public/products/products';
 
 const Products = () => {
@@ -19,7 +18,7 @@ const Products = () => {
 
   return product ? (
     <Layout>
-      <Container fluid="xxl" className="py-3 py-md-5 ">
+      <Container as="section" fluid="xxl" className="py-3 py-md-5 ">
         <Row xs={1} md={2}>
           <Col>
             <div className="text-center">
@@ -52,7 +51,7 @@ const Products = () => {
         </Row>
       </Container>
 
-      <Container fluid className=" py-md-4 bg-gray">
+      <Container as="section" fluid className=" py-md-4 bg-gray">
         <Row>
           <Col>
             <p className="text-center fs-md-4 fs-5">Related Products</p>
@@ -61,8 +60,13 @@ const Products = () => {
         <Row xs={1} sm={2} md={4}>
           {product.relatedProduct.map((id) => (
             <Col>
-              <div className="text-center mb-2 mb-md-0">
-                {product_db[id].img && <Image src={product_db[id].img} />}
+              <div
+                className="text-center mb-2 mb-md-0"
+                onClick={() => router.push(`/products/${id}`)}
+              >
+                {product_db[id].img && (
+                  <Image className="pointer" src={product_db[id].img} />
+                )}
               </div>
             </Col>
           ))}

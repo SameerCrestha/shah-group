@@ -12,7 +12,7 @@ export default function ProductCart({ id, img, title, subTitle }) {
       onClick={() => router.push(`/products/${id}`)}
     >
       <div className="mx-auto px-4 px-sm-3 px-md-4 pt-4 pt-sm-3 pt-md-4  pointer">
-        <Image src={img} width={343} height="390" />
+        <Image className="pointer" src={img} width={343} height="390" />
       </div>
       <Card.Body className="pointer">
         <Card.Title className="text-center fs-4 pointer">{title}</Card.Title>

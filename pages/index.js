@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../components/layout';
@@ -53,7 +52,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <Container fluid className={styles.section2}>
+      <Container as="section" fluid className={styles.section2}>
         <Row className={`d-none d-lg-block ${styles.section2_card_section}`}>
           <Col className={`${styles.section2_card} ${styles.section2_card1}`}>
             <Image src={quality} width={112} height={112} />
@@ -136,7 +135,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container fluid className={styles.section3}>
+      <Container as="section" fluid className={styles.section3}>
         <Row>
           <Col xs={6} sm={3} className={styles.section3_first_cart}>
             <p className="fs-5 fs-sm-3 fs-m-2">Our</p>
@@ -223,7 +222,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container fluid className={styles.section4}>
+      <Container as="section" fluid className={styles.section4}>
         <Row>
           <div className="m-auto d-flex flex-column align-items-center">
             <p className="fs-3 fs-sm-2 fs-md-1">Costumer Reviews</p>
@@ -393,7 +392,11 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container fluid className="p-2 p-sm-3 p-md-4 p-lg-5 bg-gray">
+      <Container
+        as="section"
+        fluid
+        className="p-2 p-sm-3 p-md-4 p-lg-5 bg-gray"
+      >
         <Row xs={1} md={2} className="my-5 d-flex  justify-content-start">
           <Col md="5">
             <div className=" d-flex  justify-content-center justify-content-md-start align-items-md-start ">
