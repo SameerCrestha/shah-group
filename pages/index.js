@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import background from "../public/index/section1.png";
 import quality from '../public/logos/quality.svg';
 import trust from '../public/logos/trust.svg';
 import fast from '../public/logos/fast.svg';
@@ -31,8 +32,9 @@ import product_db from '../public/products/products';
 
 export default function Home() {
   return (
-    <Layout page={1}>
+    <Layout page={1} className={styles.body}>
       <section className={styles.section1}>
+      <Image className={styles.background} src={background} layout="fill" objectFit="cover" objectPosition="center" priority="true"/>
         <div className={styles.sec1Card1}>
           We Dream To Fulfill Your <span>Business Expectations</span>
           <p>
