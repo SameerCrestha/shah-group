@@ -17,7 +17,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [1, 2, 3, 4],
   },
   2: {
@@ -30,7 +30,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [2, 3, 4, 5],
   },
   3: {
@@ -43,7 +43,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [3, 4, 5, 6],
   },
   4: {
@@ -56,7 +56,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [2, 5, 6, 7],
   },
   5: {
@@ -69,7 +69,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [2, 4, 7, 1],
   },
   6: {
@@ -82,7 +82,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [1, 2, 3, 4],
   },
   7: {
@@ -95,7 +95,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [3, 4, 5, 1],
   },
   8: {
@@ -108,7 +108,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [3, 4, 5, 2],
   },
   9: {
@@ -121,7 +121,7 @@ export default {
       'Exercitation cupidatat culpa deserunt deserunt. Qui adipisicing minim mollit Lorem. Lorem dolore in velit ad exercitation eu consequat. Id incididunt dolore ea in velit incididunt deserunt eu proident Lorem ea.',
 
     helights: ['helathy', 'Refund-able', 'Delivery-charge: Rs 100'],
-    Price: 'Rs 1000/kg',
+    price: 'Rs 1000/kg',
     relatedProduct: [3, 5, 7, 2],
   },
 };
