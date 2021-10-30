@@ -81,7 +81,7 @@
 }
 
 .section2_first_row {
-  background-image: url('../public/index/services.png');
+  /* background-image: url('../public/index/services.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;

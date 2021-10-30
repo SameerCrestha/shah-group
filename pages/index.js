@@ -7,7 +7,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import background from "../public/index/section1.png";
+import background from "../public/index/section1.webp";
+import services from "../public/index/services.png";
 import quality from '../public/logos/quality.svg';
 import trust from '../public/logos/trust.svg';
 import fast from '../public/logos/fast.svg';
@@ -34,7 +35,7 @@ export default function Home() {
   return (
     <Layout page={1} className={styles.body}>
       <section className={styles.section1}>
-      <Image className={styles.background} src={background} layout="fill" objectFit="cover" objectPosition="center" priority="true"/>
+      <Image className={styles.background} src={background} layout="fill" objectFit="cover" objectPosition="center" placeholder="blur"  quality={100}/>
         <div className={styles.sec1Card1}>
           We Dream To Fulfill Your <span>Business Expectations</span>
           <p>
@@ -43,7 +44,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.sec1Card2}>
-          <Image src={images} placeholder="blur" layout="responsive" />
+          <Image src={images} placeholder="blur" layout="responsive"  />
         </div>
         <Link href="/contact-us">
           <a>
@@ -55,9 +56,10 @@ export default function Home() {
       </section>
 
       <Container as="section" fluid className={styles.section2}>
+        
         <Row className={`d-none d-lg-block ${styles.section2_card_section}`}>
           <Col className={`${styles.section2_card} ${styles.section2_card1}`}>
-            <Image src={quality} width={112} height={112} />
+            <Image src={quality} width={112} height={112} quality={50}/>
             <p className="fs-3">QUALITY</p>
             <p className="fs-6 text-center">
               We provide our best service to our client, fast efficient and
@@ -68,7 +70,7 @@ export default function Home() {
             </a>
           </Col>
           <Col className={`${styles.section2_card} ${styles.section2_card2}`}>
-            <Image src={trust} width={112} height={112} />
+            <Image src={trust} width={112} height={112} quality={50} />
 
             <p className="fs-3">TRUST</p>
             <p className="fs-6 text-center">
@@ -80,7 +82,7 @@ export default function Home() {
             </a>
           </Col>
           <Col className={`${styles.section2_card} ${styles.section2_card3}`}>
-            <Image src={refund} width={112} height={112} />
+            <Image src={refund} width={112} height={112} quality={50} />
             <p className="fs-3">REFUND</p>
             <p className="fs-6 text-center">
               We provide our best service to our client, fast efficient and
@@ -91,7 +93,7 @@ export default function Home() {
             </a>
           </Col>
           <Col className={`${styles.section2_card} ${styles.section2_card4}`}>
-            <Image src={fast} width={112} height={112} />
+            <Image src={fast} width={112} height={112} quality={50}/>
             <p className="fs-3">FAST</p>
             <p className="fs-6 text-center">
               We provide our best service to our client, fast efficient and
@@ -103,7 +105,9 @@ export default function Home() {
           </Col>
         </Row>
 
-        <Row className={`d-none d-md-block ${styles.section2_first_row}`}></Row>
+        <Row className={`d-none d-md-block ${styles.section2_first_row}`}>
+        <Image className={styles.background} src={services} layout="fill" objectFit="cover" objectPosition="center" placeholder="blur" priority={false} quality={50}/>
+        </Row>
 
         <Row className={styles.section2_second_row}>
           <Row className="d-flex align-items-center">

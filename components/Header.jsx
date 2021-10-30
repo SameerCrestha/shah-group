@@ -1,5 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 import Container from 'react-bootstrap/Container'
 import Image from 'next/image'
 import logo from '../public/logos/logo.png'
@@ -18,9 +19,15 @@ export default function Header() {
                     <Nav className="ms-auto" >
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/about-us">About us</Nav.Link>
-                        <Nav.Link href="/products">Products</Nav.Link>
+
+                        <NavDropdown title="Products" id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="/products/water">Water Products</NavDropdown.Item>
+                            <NavDropdown.Item href="/products">Other Products</NavDropdown.Item>
+                        </NavDropdown>
+
                         <Nav.Link href="/services">Services</Nav.Link>
                         <Nav.Link href="/contact-us">Contact us</Nav.Link>
+
 
                     </Nav>
                 </Navbar.Collapse>

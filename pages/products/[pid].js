@@ -37,7 +37,7 @@ const Products = () => {
                 ))}
               </ul>
 
-              <p className="fs-4 mb-5">{product.price}</p>
+              <p className="fs-4 my-5">Price: {product.price}</p>
 
               <Link href="/contact-us" className="mt-5">
                 <a>

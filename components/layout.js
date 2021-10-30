@@ -15,7 +15,7 @@ export default function Layout({ children, page }) {
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -24,7 +24,8 @@ export default function Layout({ children, page }) {
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet"
-        />
+        /> */}
+        <link rel="stylesheet" href="../styles/font.css"/>
       </Head>
       <body>
         <Header />
