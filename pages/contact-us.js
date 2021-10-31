@@ -3,10 +3,12 @@ import Layout from '../components/layout';
 import styles from '../styles/contact-us.module.css';
 import icons from '../public/logos/exporter';
 import Form from "../components/form";
+import bgsec1 from "../public/contact-us/sec1.png";
 export default function aboutUs(){
     return (
         <Layout page={5}>
             <section className={styles.section1}>
+            <Image src={bgsec1} layout="fill" objectFit="cover" objectPosition="center" placeholder="blur" quality="100"/>
                 <div className={styles.sec1Card1}>
                     <h2>Contact us</h2>
                     <p>Your <span>connection</span> to Shah group.</p>

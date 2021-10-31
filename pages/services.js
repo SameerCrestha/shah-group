@@ -4,10 +4,12 @@ import styles from '../styles/services.module.css';
 
 import FeatureCard from "../components/featureCard";
 import pics from "../public/services/exporter";
+import bgsec1 from "../public/services/section1.png";
 export default function aboutUs(){
     return (
         <Layout page={4}>
         <section className={styles.section1}>
+            <Image src={bgsec1} layout="fill" objectFit="cover" objectPosition="center" placeholder="blur" quality="100"/>
             <div className={styles.sec1Container}>
                 <h2>Our services</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus morbi scelerisque id tellus eu elit.</p>

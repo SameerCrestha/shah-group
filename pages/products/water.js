@@ -11,11 +11,12 @@ import Col from 'react-bootstrap/Col';
 import jar_p from '../../public/products/jar_p.jpg';
 import tanker_p from '../../public/products/tanker_p.jpg';
 import bottle_p from '../../public/products/bottle_p.jpg';
-
+import bgsec1 from "../../public/products/products_water.png";
 export default function water() {
   return (
     <Layout page={3}>
       <section className={styles.section1}>
+      <Image src={bgsec1} layout="fill" objectFit="cover" objectPosition="center" placeholder="blur" quality="100"/>
         <div className={styles.descriptionBox}>
           <p> Symbol of </p>
           <p>

@@ -2,10 +2,13 @@ import Layout from '../components/layout';
 import styles from '../styles/about-us.module.css';
 import ProfileCard from '../components/profileCard';
 import profiles from '../public/about-us/profiles';
+import bgsec1 from "../public/about-us/section1.png";
+import Image from "next/image";
 export default function aboutUs() {
   return (
     <Layout page={2}>
       <section className={styles.section1}>
+      <Image src={bgsec1} layout="fill" objectFit="cover" objectPosition="center" placeholder="blur"/>
         <div className={styles.sec1Container}>
           <div className={styles.sec1Row1}>
             <h2>

@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import star from '../../public/logos/star.svg';
 import verified from '../../public/logos/verified.svg';
+import bgsec1 from "../../public/products/products.png";
 
 import product_db from '../../public/products/products';
 
@@ -19,6 +20,7 @@ export default function products() {
   return (
     <Layout page={3}>
       <section className={styles.section1}>
+      <Image src={bgsec1} layout="fill" objectFit="cover" objectPosition="center" placeholder="blur" quality="100"/>
         <div className={styles.descriptionBox}>
           <p> Without greate</p>
           <p>

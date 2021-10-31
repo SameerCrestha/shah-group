@@ -4,7 +4,7 @@ export default function ProfileCard({name,post,detail,pic}){
     return(
             <div className={styles.container}>
                <div className={styles.pic}>
-                  <Image src={pic} layout="responsive" alt="profile pic"/>
+                  <Image src={pic} layout="responsive" alt="profile pic"  />
                </div>
                <div className={styles.info}>
                <span>{name}</span><br/>

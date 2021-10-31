@@ -12,7 +12,7 @@ export default function Header() {
         <Navbar collapseOnSelect expand="md" bg='dark' variant="dark" sticky='top' className='p-0'>
             <Container>
                 <Navbar.Brand className=' p-0 mb-0' href="/">
-                    <Image className='pointer' src={logo} width={112} height={50} />
+                    <Image className='pointer' src={logo} width={112} height={50} priority quality="1"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
